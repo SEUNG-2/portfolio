@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="디지털 경험을 설계하고 만드는 김승이의 포트폴리오">
+  <title>김승이 | Product Designer & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="홈으로 이동">MS<span>.</span></a>
+    <nav class="main-nav" aria-label="주요 메뉴">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">함께 만들기 <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero container" id="about">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> 현재 새로운 프로젝트를 찾고 있어요</p>
+        <h1>사람과 브랜드 사이에<br><em>좋은 경험</em>을 만듭니다.</h1>
+        <p class="hero-description">안녕하세요, 김승이입니다. 복잡한 문제를 명확하게 정리하고, 매력적인 인터페이스로 풀어내는 Product Designer & Developer입니다.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">작업 둘러보기 <span>↓</span></a>
+          <a class="text-link" href="#contact">이야기 나누기 <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="프로필 장식 이미지">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="visual-card">
+          <span class="visual-label">SELECTED<br>WORKS / 24</span>
+          <span class="visual-mark">✳</span>
+          <div class="visual-footer"><span>SEOUL, KR</span><span>35° 10′ 52″ N</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats container reveal" aria-label="주요 경력">
+      <div><strong>05</strong><span>년의 경험</span></div>
+      <div><strong>32</strong><span>완료한 프로젝트</span></div>
+      <div><strong>12</strong><span>함께한 브랜드</span></div>
+      <p>디자인은 보기 좋은 것을 넘어<br>행동을 변화시키는 일이라고 믿습니다.</p>
+    </section>
+
+    <section class="work-section container" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 — Selected works</p>
+        <h2>마음과 성과를<br><em>동시에 움직인</em> 작업들.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-card--orange reveal">
+          <div class="project-top"><span>01 / 03</span><span>Branding · Web</span></div>
+          <div class="project-art art-orange"><span class="art-word">mori</span><span class="art-sun">☼</span><span class="art-caption">slow living<br>for every day</span></div>
+          <div class="project-info"><div><p class="project-type">Lifestyle platform</p><h3>MORI — 일상의 속도를<br>조금 늦추는 브랜드</h3></div><a href="#contact" class="round-arrow" aria-label="MORI 프로젝트 문의">↗</a></div>
+        </article>
+        <article class="project-card project-card--blue reveal">
+          <div class="project-top"><span>02 / 03</span><span>Product · UX/UI</span></div>
+          <div class="project-art art-blue"><div class="dashboard"><span class="dashboard-title">Goodspace</span><span class="dashboard-number">84<span>%</span></span><span class="dashboard-line"></span><div class="dashboard-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+          <div class="project-info"><div><p class="project-type">Productivity app</p><h3>GOODSPACE — 몰입을<br>돕는 집중 관리 도구</h3></div><a href="#contact" class="round-arrow" aria-label="GOODSPACE 프로젝트 문의">↗</a></div>
+        </article>
+        <article class="project-card project-card--yellow reveal">
+          <div class="project-top"><span>03 / 03</span><span>Campaign · Digital</span></div>
+          <div class="project-art art-yellow"><span class="yellow-shape shape-one"></span><span class="yellow-shape shape-two"></span><span class="art-phrase">MAKE<br>IT<br>MATTER<span>.</span></span><span class="art-mini">Nº 24 — CULTURE</span></div>
+          <div class="project-info"><div><p class="project-type">Culture campaign</p><h3>오늘의 취향 — 새로운<br>문화를 발견하는 방법</h3></div><a href="#contact" class="round-arrow" aria-label="오늘의 취향 프로젝트 문의">↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section container reveal" id="contact">
+      <div class="contact-copy"><p class="eyebrow">02 — Get in touch</p><h2>새로운 장면을<br><em>함께 만들까요?</em></h2><p>아이디어가 아직 선명하지 않아도 괜찮아요.<br>가볍게 이야기를 시작해 보세요.</p></div>
+      <form class="contact-form" id="contactForm">
+        <label>이름 <input type="text" name="name" placeholder="홍길동" required></label>
+        <label>이메일 <input type="email" name="email" placeholder="hello@example.com" required></label>
+        <label>어떤 이야기를 나눌까요? <textarea name="message" rows="3" placeholder="프로젝트에 대해 간단히 알려주세요." required></textarea></label>
+        <button class="button button-light" type="submit">메시지 보내기 <span>↗</span></button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <a class="brand" href="#top">MS<span>.</span></a>
+    <p>© <span id="year"></span> Minseo Kim. Crafted with curiosity.</p>
+    <div class="footer-links"><a href="mailto:hello@minseokim.design">Email</a><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
