@@ -58,19 +58,28 @@
       </div>
       <div class="project-grid">
         <article class="project-card project-card--orange reveal">
-          <div class="project-top"><span>01 / 03</span><span>Branding · Web</span></div>
-          <div class="project-art art-orange"><span class="art-word">mori</span><span class="art-sun">☼</span><span class="art-caption">slow living<br>for every day</span></div>
-          <div class="project-info"><div><p class="project-type">Lifestyle platform</p><h3>MORI — 일상의 속도를<br>조금 늦추는 브랜드</h3></div><a href="#contact" class="round-arrow" aria-label="MORI 프로젝트 문의">↗</a></div>
+          <a href="#contact" class="round-arrow" aria-label="MORI 프로젝트 문의">↗</a>
+          <button class="project-card-trigger" type="button" data-project="mori" aria-haspopup="dialog" aria-controls="projectModal" aria-labelledby="mori-title">
+            <div class="project-top"><span>01 / 03</span><span>Branding · Web</span></div>
+            <div class="project-art art-orange"><span class="art-word">mori</span><span class="art-sun">☼</span><span class="art-caption">slow living<br>for every day</span></div>
+            <div class="project-info"><div><p class="project-type">Lifestyle platform</p><h3 id="mori-title">MORI — 일상의 속도를<br>조금 늦추는 브랜드</h3></div></div>
+          </button>
         </article>
         <article class="project-card project-card--blue reveal">
-          <div class="project-top"><span>02 / 03</span><span>Product · UX/UI</span></div>
-          <div class="project-art art-blue"><div class="dashboard"><span class="dashboard-title">Goodspace</span><span class="dashboard-number">84<span>%</span></span><span class="dashboard-line"></span><div class="dashboard-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
-          <div class="project-info"><div><p class="project-type">Productivity app</p><h3>GOODSPACE — 몰입을<br>돕는 집중 관리 도구</h3></div><a href="#contact" class="round-arrow" aria-label="GOODSPACE 프로젝트 문의">↗</a></div>
+          <a href="#contact" class="round-arrow" aria-label="GOODSPACE 프로젝트 문의">↗</a>
+          <button class="project-card-trigger" type="button" data-project="goodspace" aria-haspopup="dialog" aria-controls="projectModal" aria-labelledby="goodspace-title">
+            <div class="project-top"><span>02 / 03</span><span>Product · UX/UI</span></div>
+            <div class="project-art art-blue"><div class="dashboard"><span class="dashboard-title">Goodspace</span><span class="dashboard-number">84<span>%</span></span><span class="dashboard-line"></span><div class="dashboard-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+            <div class="project-info"><div><p class="project-type">Productivity app</p><h3 id="goodspace-title">GOODSPACE — 몰입을<br>돕는 집중 관리 도구</h3></div></div>
+          </button>
         </article>
         <article class="project-card project-card--yellow reveal">
-          <div class="project-top"><span>03 / 03</span><span>Campaign · Digital</span></div>
-          <div class="project-art art-yellow"><span class="yellow-shape shape-one"></span><span class="yellow-shape shape-two"></span><span class="art-phrase">MAKE<br>IT<br>MATTER<span>.</span></span><span class="art-mini">Nº 24 — CULTURE</span></div>
-          <div class="project-info"><div><p class="project-type">Culture campaign</p><h3>오늘의 취향 — 새로운<br>문화를 발견하는 방법</h3></div><a href="#contact" class="round-arrow" aria-label="오늘의 취향 프로젝트 문의">↗</a></div>
+          <a href="#contact" class="round-arrow" aria-label="오늘의 취향 프로젝트 문의">↗</a>
+          <button class="project-card-trigger" type="button" data-project="taste" aria-haspopup="dialog" aria-controls="projectModal" aria-labelledby="taste-title">
+            <div class="project-top"><span>03 / 03</span><span>Campaign · Digital</span></div>
+            <div class="project-art art-yellow"><span class="yellow-shape shape-one"></span><span class="yellow-shape shape-two"></span><span class="art-phrase">MAKE<br>IT<br>MATTER<span>.</span></span><span class="art-mini">Nº 24 — CULTURE</span></div>
+            <div class="project-info"><div><p class="project-type">Culture campaign</p><h3 id="taste-title">오늘의 취향 — 새로운<br>문화를 발견하는 방법</h3></div></div>
+          </button>
         </article>
       </div>
     </section>
@@ -92,6 +101,20 @@
     <p>© <span id="year"></span> Minseo Kim. Crafted with curiosity.</p>
     <div class="footer-links"><a href="mailto:hello@minseokim.design">Email</a><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
   </footer>
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle" aria-describedby="projectModalDescription" hidden>
+    <div class="project-modal-dialog">
+      <button class="project-modal-close" type="button" aria-label="상세 정보 닫기">×</button>
+      <p class="eyebrow">Selected work — Project details</p>
+      <p class="project-modal-example">예시 정보: 프로젝트 설명, 역할, 기술, 성과는 실제 정보가 아닌 데모용 예시입니다.</p>
+      <h2 id="projectModalTitle"></h2>
+      <p class="project-modal-description" id="projectModalDescription"></p>
+      <dl class="project-modal-details">
+        <div><dt>담당 역할</dt><dd id="projectModalRole"></dd></div>
+        <div><dt>사용 기술</dt><dd id="projectModalTech"></dd></div>
+        <div><dt>주요 성과</dt><dd id="projectModalResults"></dd></div>
+      </dl>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
